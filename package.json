@@ -1,6 +1,7 @@
 {
-  "name": "cra-template-awefeng",
+  "name": "@awefeng/cra-template-awefeng",
   "version": "1.0.0",
+  
   "description": "CRA自定义模板",
   "repository": {
     "type": "git",
