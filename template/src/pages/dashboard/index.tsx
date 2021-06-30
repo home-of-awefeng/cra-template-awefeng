@@ -1,12 +1,7 @@
-import React, { FC } from 'react'
-import Editor from '@/components/editor'
+import { FC } from 'react'
 
 const Dashboard: FC = () => {
-
-  return <>
-  数据看板
-    <Editor />
-  </>
+  return <>数据看板</>
 }
 
 export default Dashboard

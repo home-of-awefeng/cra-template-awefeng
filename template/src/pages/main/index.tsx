@@ -1,7 +1,5 @@
-import React, { FC } from 'react'
-import {
-  BrowserRouter
-} from "react-router-dom"
+import { FC } from 'react'
+import { BrowserRouter } from 'react-router-dom'
 import RouteNode from './routeNode'
 import { Provider } from 'react-redux'
 import store from '@/state/store'

@@ -1,15 +1,15 @@
-.content{
-  background-color: #FFFFFF;
+.content {
+  background-color: #ffffff;
   margin: 0;
   padding: 20px;
   overflow: auto;
 }
-.sider{
+.sider {
   overflow: auto;
   position: relative;
   left: 0;
   height: 100vh;
-  .logo{
+  .logo {
     width: 100%;
     padding: 0 24px;
     height: 64px;
@@ -20,18 +20,18 @@
       height: 32px;
     }
     & > span {
-      color: #FFFFFF;
+      color: #ffffff;
     }
   }
 }
-:global(.ant-layout-sider-collapsed) .logo{
+:global(.ant-layout-sider-collapsed) .logo {
   & > span {
     display: none;
   }
 }
 
-.header{
-  background-color: #FFFFFF;
+.header {
+  background-color: #ffffff;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;

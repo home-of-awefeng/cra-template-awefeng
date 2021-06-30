@@ -1,3 +1,4 @@
+/// <reference types="react-scripts" />
 declare module '*.css';
 declare module '*.less';
 declare module '*.png';
@@ -19,4 +20,10 @@ declare global {
   }
 }
 
-declare const REACT_APP_ENV: 'test' | 'dev' | 'pre' | false;
+declare interface NodeModule {
+  hot: {
+    accept(path?: string, callback?: () => void): void
+  }
+}
+
+

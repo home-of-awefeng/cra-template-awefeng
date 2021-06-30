@@ -4,18 +4,14 @@
  * key值为process.env.NODE_ENV
  * 在package.json中是script 命令中带入
  */
-const config = {
-  development: {
-    domain: "//127.0.0.1:3000",
-    baseUrl: "//backend-api-dev.example.com",
-  },
+ const config = {
   test: {
     domain: "//frontend-domain-test.example.com",
-    baseUrl: "//backend-api-test.example.com",
+    baseUrl: "//backend-api-test.example.com"
   },
   production: {
     domain: "//frontend-domain.com",
-    baseUrl: "//backend-api.example.com",
+    baseUrl: "//backend-api.example.com"
   }
 }
 
@@ -24,7 +20,20 @@ interface ConfigProps {
   baseUrl: string //用于接口请求的拼装
 }
 
-export function getConfig(): ConfigProps {
-  return config[process.env.REACT_APP_ENV]
+function getConfig(): ConfigProps {
+  let cur: ConfigProps
+
+  switch (process.env.REACT_APP_ENV) {
+  case "production":
+    cur = config.production
+    break
+  case "test":
+  default:
+    cur = config.test
+    break
+  }
+
+  return cur
 }
 export default getConfig()
+

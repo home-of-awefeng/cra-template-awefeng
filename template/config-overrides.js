@@ -6,7 +6,7 @@
  * 配置 https://zhuanlan.zhihu.com/p/96103181
  */
 
-const { override, overrideDevServer, fixBabelImports, addWebpackAlias, addLessLoader } = require('customize-cra')
+const { override, overrideDevServer, fixBabelImports, addWebpackAlias } = require('customize-cra')
 const path = require("path")
 const proxy = require("./config/proxy")
 // 禁用ManifestPlugin ModuleScopePlugin
@@ -27,12 +27,11 @@ module.exports = {
     // 添加一些webpack的其他依赖
     // TODO function(config){},
     removeManifest(),
+    // 按需加载antd
     fixBabelImports('import', {
       libraryName: 'antd',
       style: 'css'
     }),
-    // 使用less
-    addLessLoader(),
     addWebpackAlias({
       "@": path.resolve(__dirname, "src"),
       "@config": path.resolve(__dirname, "config")
