@@ -1,0 +1,25 @@
+{
+  "name": "@awefeng/cra-template-awefeng",
+  "version": "1.0.0",
+  
+  "description": "CRA自定义模板",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/home-of-awefeng/cra-template-awefeng.git"
+  },
+  "keywords": [
+    "react",
+    "create-react-app",
+    "cra",
+    "custom",
+    "template",
+    "redux",
+    "redux/toolkit"
+  ],
+  "author": "awefeng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/home-of-awefeng/cra-template-awefeng/issues"
+  },
+  "homepage": "https://github.com/home-of-awefeng/cra-template-awefeng#readme"
+}
