@@ -1,0 +1,40 @@
+.content{
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 20px;
+  overflow: auto;
+}
+.sider{
+  overflow: auto;
+  position: relative;
+  left: 0;
+  height: 100vh;
+  .logo{
+    width: 100%;
+    padding: 0 24px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    & > img {
+      height: 32px;
+    }
+    & > span {
+      color: #FFFFFF;
+    }
+  }
+}
+:global(.ant-layout-sider-collapsed) .logo{
+  & > span {
+    display: none;
+  }
+}
+
+.header{
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-bottom: solid 1px #8091a533;
+  box-shadow: 0 0 10px 0 #8091a533;
+}

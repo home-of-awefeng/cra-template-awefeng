@@ -1,0 +1,43 @@
+{
+    "package": {
+        "scripts": {
+            "tip": "echo 'script下build后的为分支名 命令不要更改 关系到cicd配置'",
+            "start": "REACT_APP_ENV=development react-app-rewired start",
+            "build:test": "CI=false REACT_APP_ENV=test react-app-rewired build",
+            "build:master": "REACT_APP_ENV=production CI=false react-app-rewired build"
+        },
+        "dependencies": {
+            "@ant-design/icons": "^4.6.2",
+            "@reduxjs/toolkit": "^1.6.0",
+            "ahooks": "^2.10.6",
+            "antd": "^4.16.2",
+            "axios": "^0.21.1",
+            "customize-cra": "^1.0.0",
+            "qs": "^6.10.1",
+            "react": "^17.0.2",
+            "react-app-rewired": "^2.1.8",
+            "react-dom": "^17.0.2",
+            "react-redux": "^7.2.4",
+            "react-router-dom": "^5.2.0",
+            "react-scripts": "4.0.3",
+            "redux": "^4.1.0",
+            "typescript": "^4.1.2"
+        },
+        "devDependencies": {
+            "@types/axios": "^0.14.0",
+            "@types/node": "^12.0.0",
+            "@types/react": "^17.0.0",
+            "@types/react-dom": "^17.0.0",
+            "@types/react-redux": "^7.1.16",
+            "@types/react-router-dom": "^5.1.7",
+            "eslint-config-prettier": "^8.3.0",
+            "eslint-plugin-prettier": "^3.4.0",
+            "prettier": "^2.3.1",
+            "stylelint": "^13.7.0",
+            "stylelint-config-css-modules": "^2.2.0",
+            "stylelint-config-prettier": "^8.0.1",
+            "stylelint-config-standard": "^20.0.0",
+            "stylelint-order": "^4.0.0"
+        }
+    }
+}
